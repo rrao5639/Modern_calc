@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #9fbaa8, #8cb3d9);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 320px;
+}
+
+.display {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: right;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  word-wrap: break-word;
+  min-height: 60px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+.operator {
+  background: #ff8c42;
+}
+
+.equal {
+  background: #43c4e8;
+  grid-column: span 2; /* Makes the equal button wider */
+}
+
+.action {
+  background: #ef476f;
+}
